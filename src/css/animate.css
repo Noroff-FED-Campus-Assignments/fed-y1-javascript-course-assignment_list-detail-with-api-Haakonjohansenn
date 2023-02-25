@@ -4,11 +4,16 @@
  * @example https://fed-vocational-astro-course.vercel.app/en/html-css/module-4/animations-transitions
  */
 
-@keyframes loading-anime {
-  from {
-    transform: rotate(0deg);
+.skeleton-loader {
+  animation: skeleton 1s linear infinite alternate;
+}
+
+
+@keyframes skeleton {
+  0% {
+    background-color: hsl(200, 20%, 70%);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    background-color: hsl(200, 20%, 95%);
   }
 }
