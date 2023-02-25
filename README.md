@@ -14,7 +14,43 @@ This project was bootstrapped with Vite.
 
 ## Report
 
-_ADD_YOUR_REPORT_HERE_
+In this report i will shortly go over my thought process when working with this project.
+
+To start off i began with looking for API's, which was surprisingly hard too choose. In the end i decided to go for Game of Thrones API, because it needed no key and had a decent amount of properties to choose from, also i am a big fan of the show so that is a plus! 
+
+First off i created the idex.html/app.js, i started by freshening up on some off the lessons we have been through and then decided to start fetching the api. This went quite well and i felt confident when going for the details page. The search filter was not created until the end of the project, because i focused on getting all of the pages going first, i kind off regret this decision in the end since i did not have time to make sorting and all that stuff. 
+
+I decided to go ahead and try the skeleton loader, which i think went allright, but it took alot of time for me to figure it out. I didn't really have much time when i decided to go for it, but i was already halfway so i wanted to finish it. The styling for the skeleton loaders were the hardest part, but i got there in the end. For the styling of the page in general i kept it very simple as i did not have much time to focus on it, but i think it looks allright(not great though). I also did not use any variables and kept it very basic as again, i was pressured for time.. 
+
+Next up i created the details page, i spent alot of time figuring out how to pass the id in the querystring correctly, turns out i was missing a = sign in the href link to the details.html. i kept the styling very simple here as well. I had even more trouble styling the skeleton loader on this page, Because of this it did not turn out the way i really wanted it too, but at least i got it working decently. 
+
+For the contact page i decided to go all out and try the advanced form, i spent way too much time with this, but i am happy i got it working in the end. My problem was having regex passed in the arguments before field, of course i did not realise this was a problem, but after hours of looking and searching i finally figured it out. I did use your example too help, but really tried to understand and write it my own way as much as i could. Hopefully this is okay. I kept the styling simple here as well, but tried to make it look somewhat "professional" at least.
+
+Summary:
+
+This was much harder than i thought it would be, and i admit i underestimated the task. I could have managed my time alot better and made a much better project, this is good knowledge for me to have for the next project. Despite the project being hard and frustrating i really enjoyed learning all the things i learned in the end! 
+
+Referances: 
+
+Monde Sineke https://github.com/S3ak
+
+https://www.youtube.com/@WebDevSimplified
+
+https://stackoverflow.com/
+
+https://www.w3schools.com/
+
+Google.com for general questions and bug fixing.
+
+ChatGPT
+
+https://thronesapi.com/
+
+https://github.com/public-apis/public-apis
+
+
+
+
 
 ## Getting Started
 
@@ -102,15 +138,15 @@ Make sure you go through this checklist before submitting your project to Moodle
 - [x] Removed all unused files.
 - [x] Named all images properly.
 - [x] Committed all my code to github.
-- [ ] My repo is publically viewable.
-- [ ] I've submitted/ written a report.
-- [ ] I've removed all todo notes in code.
-- [ ] I've removed all console logs in code.
-- [ ] Code is formatted correctly.
-- [ ] There are no red underlines in VSCode.
-- [ ] There are no error messages in the terminal when I run the project.
-- [ ] My code is indented correctly.
-- [ ] I've checked my report for grammer & spelling using grammerly or chatGPT
+- [x] My repo is publically viewable.
+- [x] I've submitted/ written a report.
+- [x] I've removed all todo notes in code.
+- [x] I've removed all console logs in code.
+- [x] Code is formatted correctly.
+- [x] There are no red underlines in VSCode.
+- [x] There are no error messages in the terminal when I run the project.
+- [x] My code is indented correctly.
+- [x] I've checked my report for grammer & spelling using grammerly or chatGPT
 - [ ] I've used used [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
 - [ ] I've checked off every todo in this README.
 
@@ -130,5 +166,5 @@ Make sure you go through this checklist before submitting your project to Moodle
 
 ## Authors
 
-- _YOURE_NAME_ (@_your_github_username_)
+- Haakon Johansen (@HaakonJohansenn)
 - Monde Sineke (@S3ak)
