@@ -1,46 +1,16 @@
-/*
-============================================
-Constants
-@example: https://github.com/S3ak/fed-javascript1-api-calls/blob/main/examples/advanced-form.html#L50
-============================================
-*/
-
-// TODO: Get DOM elements from the DOM
-
-// TODO: Create event listeners for the form
-
-/*
-============================================
-API calls
-@example: https://github.com/S3ak/fed-javascript1-api-calls/blob/main/examples/advanced-form.html#L157
-============================================
-*/
-
-// TODO: Set up a function to fetch data from the API
-
-/*
-============================================
-Helper functions
-@example: https://github.com/S3ak/fed-javascript1-api-calls/blob/main/examples/advanced-form.html#L118
-============================================
-*/
-
-// TODO: Create a function to validate an input field
-
-// TODO: Create a function to create a DOM element
-
 const formEl = document.querySelector("#js-form");
 const nameEl = document.querySelector("#js-name");
 const emailEl = document.querySelector("#js-email");
 const subjectEl = document.querySelector("#js-subject");
 const addressEl = document.querySelector("#js-address");
-const messageEl = document.querySelector("#js-message-container")
+const messageEl = document.querySelector("#js-message-container");
 
 const minLengthRegexName = /^[a-zA-Z]{5,}/;
 const minLengthRegexSubject = /^[a-zA-Z]{10,}/;
 const minLengthRegexAddress = /^[a-zA-Z]{25,}/;
 
-const emailRegex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+const emailRegex =
+  /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
 
 formEl.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -80,19 +50,31 @@ formEl.addEventListener("submit", function (event) {
   submitForm(name, email, subject, address);
 });
 
-const validateName = () => validateField(nameEl, minLengthRegexName, "Please enter a valid name");
+const validateName = () =>
+  validateField(nameEl, minLengthRegexName, "Please enter a valid name");
 nameEl.addEventListener("input", validateName);
 nameEl.addEventListener("blur", validateName);
 
-const validateEmail = () => validateField(emailEl, emailRegex, "Please enter a valid email address");
+const validateEmail = () =>
+  validateField(emailEl, emailRegex, "Please enter a valid email address");
 emailEl.addEventListener("input", validateEmail);
 emailEl.addEventListener("blur", validateEmail);
 
-const validateSubject = () => validateField(subjectEl, minLengthRegexSubject, "Please enter a valid subject");
+const validateSubject = () =>
+  validateField(
+    subjectEl,
+    minLengthRegexSubject,
+    "Please enter a valid subject"
+  );
 subjectEl.addEventListener("input", validateSubject);
 subjectEl.addEventListener("blur", validateSubject);
 
-const validateAddress = () => validateField(addressEl, minLengthRegexAddress, "please enter a valid address");
+const validateAddress = () =>
+  validateField(
+    addressEl,
+    minLengthRegexAddress,
+    "please enter a valid address"
+  );
 addressEl.addEventListener("input", validateAddress);
 addressEl.addEventListener("blur", validateAddress);
 
@@ -130,10 +112,10 @@ function resetForm() {
   subjectEl.classList.remove("is-success");
   addressEl.classList.remove("is-success");
 
-  document.querySelectorAll("[data-id]").forEach(function(el){
+  document.querySelectorAll("[data-id]").forEach(function (el) {
     el.innerHTML = "";
   });
-};
+}
 
 async function submitForm(name, email, subject, address) {
   try {

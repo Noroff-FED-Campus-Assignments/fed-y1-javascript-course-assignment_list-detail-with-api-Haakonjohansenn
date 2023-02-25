@@ -78,7 +78,7 @@ label {
     height: 28px;
     border-radius: 10px;
   }
-  
+
   .submit-button {
     display: flex;
     justify-content: center;
@@ -98,7 +98,7 @@ label {
     height: 32px;
     border-radius: 13px;
   }
-  
+
   .submit-button {
     display: flex;
     justify-content: center;
@@ -108,5 +108,3 @@ label {
     border-radius: 15px;
   }
 }
-
-

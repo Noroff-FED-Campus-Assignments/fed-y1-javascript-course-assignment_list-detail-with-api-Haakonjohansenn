@@ -92,21 +92,23 @@
 
 h1 {
   text-align: center;
-  font-family: 'Gentium Book Plus', serif;
+  font-family: "Gentium Book Plus", serif;
   font-size: 40px;
 }
 
 h2 {
   text-align: center;
-  font-family: 'Gentium Book Plus', serif;
+  font-family: "Gentium Book Plus", serif;
   font-size: 30px;
 }
 
-.fullname, .family {
+.fullname,
+.family {
   color: rgb(48, 39, 39);
 }
 
-.family:hover, .fullname:hover {
+.family:hover,
+.fullname:hover {
   color: azure;
   transition: ease-in;
 }
@@ -114,7 +116,6 @@ h2 {
 article p {
   text-align: center;
 }
-
 
 #js-list-container {
   margin-top: 40px;
@@ -153,5 +154,3 @@ body {
     "main"
     "footer";
 }
-
-
