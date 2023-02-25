@@ -101,7 +101,7 @@ Make sure you go through this checklist before submitting your project to Moodle
 - [x] I have not used a Javascript library.
 - [x] Removed all unused files.
 - [x] Named all images properly.
-- [ ] Committed all my code to github.
+- [x] Committed all my code to github.
 - [ ] My repo is publically viewable.
 - [ ] I've submitted/ written a report.
 - [ ] I've removed all todo notes in code.
