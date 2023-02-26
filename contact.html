@@ -4,18 +4,32 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="_REPLACE_WITH_DESCRIPTION_" />
+    <meta
+      name="description"
+      content="This page contains a contact form so that you can easily get in touch."
+    />
     <meta
       name="keywords"
       content="HTML, CSS, JavaScript, _REPLACE_WITH_KEYWORD_"
     />
-    <meta name="author" content="_YOUR_NAME_" />
-    <link rel="stylesheet" href="/style.css" />
-    <!-- TODO: Import Javascript -->
-    <title>Contact Us | _REPLACE_SITE_NAME</title>
+    <meta name="author" content="Haakon" />
+    <link rel="stylesheet" href="/src/css/animate.css" />
+    <link rel="stylesheet" href="/src/css/layout.css" />
+    <link rel="stylesheet" href="/src/css/reset.css" />
+    <link rel="stylesheet" href="/src/css/ui.css" />
+    <link rel="stylesheet" href="/src/css/utilities.css" />
+    <link rel="stylesheet" href="/src/css/form.css" />
+    <script type="module" defer src="/src/js/contact.js"></script>
+    <title>Contact page</title>
   </head>
   <body class="animate__animated animate__fadeIn">
     <header class="l-header">
+      <nav class="nav-bar">
+        <ul class="navmenu">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
       <h1>Contact Us</h1>
     </header>
 
@@ -23,16 +37,60 @@
       <article role="doc-introduction">
         <h2>Contact form</h2>
 
-        <p>_REPLACE_INTRODUCTION_</p>
+        <p>Contact us here!</p>
       </article>
 
-      <section role="form-section">
-        <!-- TODO: Creat Form elements here -->
-      </section>
+      <div class="form-parent-container">
+        <section role="form-section">
+          <p id="js-message-container" class="error-message"></p>
+
+          <form class="c-form" id="js-form" autocomplete="on">
+            <div class="form-items">
+              <label for="js-name">Name:</label>
+              <input type="text" id="js-name" name="name" required />
+              <p
+                class="validation-container"
+                data-id="js-validation-message1"
+              ></p>
+            </div>
+
+            <div class="form-items">
+              <label for="js-subject">Subject:</label>
+              <input type="text" id="js-subject" name="subject" required />
+              <p
+                class="validation-container"
+                data-id="js-validation-message2"
+              ></p>
+            </div>
+
+            <div class="form-items">
+              <label for="js-email">Email Address:</label>
+              <input type="email" id="js-email" name="email" required />
+              <p
+                class="validation-container"
+                data-id="js-validation-message3"
+              ></p>
+            </div>
+
+            <div class="form-items">
+              <label for="js-address">Address:</label>
+              <input type="text" id="js-address" name="address" required />
+              <p
+                class="validation-container"
+                data-id="js-validation-message4"
+              ></p>
+            </div>
+
+            <div class="button-container">
+              <button type="submit" class="submit-button">Submit</button>
+            </div>
+          </form>
+        </section>
+      </div>
     </main>
 
     <footer class="l-footer">
-      <small>Created with ❤️ by _REPLACE_</small>
+      <small>Created with ❤️ by Haakon</small>
     </footer>
   </body>
 </html>
