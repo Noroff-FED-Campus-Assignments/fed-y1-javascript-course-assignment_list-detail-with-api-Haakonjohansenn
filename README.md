@@ -8,9 +8,9 @@ This project was bootstrapped with Vite.
 ## Resources
 
 - [Design](_LINK_TO_FIGMA_)
-- [Production deploy](_LINK_TO_WEBSITE_)
-- [Deployment CI](_LINK_TO_NETLIFY_VERCEL_DASHBOARD_)
-- [API Docs](_LINK_TO_API_DOCS_)
+- [Production deploy](https://lucky-lokum-729db9.netlify.app/index.html)
+- [Deployment CI](https://app.netlify.com/sites/lucky-lokum-729db9/overview)
+- [API Docs](https://github.com/public-apis/public-apis)
 
 ## Report
 
